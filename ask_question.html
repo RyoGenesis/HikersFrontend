@@ -41,7 +41,8 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="ask_question.html">Post Thread</a></li>
-                        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Question <span class="caret"></span></a>
+                        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                aria-haspopup="true" aria-expanded="false">Question <span class="caret"></span></a>
                             <ul class="dropdown-menu animated zoomIn">
                                 <li><a href="category.html">Question Category</a></li>
                                 <li><a href="category.html">HTML</a></li>
@@ -94,32 +95,36 @@
                             </div>
                             <div class="question-title39">
                                 <span class="form-description433">Question-Title* </span>
-                                <input type="text" name="fname" class="question-ttile32" placeholder="Write Your Question Title">
+                                <input type="text" name="fname" class="question-ttile32"
+                                    placeholder="Write Your Question Title">
                             </div>
-                            
+
                             <div class="categori49">
                                 <span class="form-description43305">Category* </span>
-                                <select name="browser" id="category-choose" class="list-category53">
-                                    <option value="">--Select Category--</option>
-                                    <option value="Discussion">Discussion</option>
-                                    <option value="Guidance">Guidance</option>
-                                    <option value="Experiences">Experiences</option>
-                                    <option value="Question">Question</option>
-                                </select>
+                              <input list="browsers" name="category-choose" id="category-choose"
+                                  class="list-category53" placeholder="Category">
+                              <datalist id="browsers">
+                                  <option value="Discussion">
+                                  <option value="Guidance">
+                                  <option value="Experiences">
+                                  <option value="Question">
+                              </datalist>
                             </div>
+
                             <div class="button-group-addfile3239">
-                                <span class="form-description23993">Attachment</span><input type="file" name="ffile" class="question-ttile3226">
-                                
+                                <span class="form-description23993">Attachment</span><input type="file" name="ffile"
+                                    class="question-ttile3226">
+
                             </div>
                             <div class="details2-239">
                                 <div class="col-md-12 nopadding">
-                                    <textarea id="txtEditor"></textarea> 
+                                    <textarea id="txtEditor"></textarea>
                                 </div>
-                            </div>	
+                            </div>
                             <div class="publish-button2389">
                                 <button type="submit" class="publis1291">Publish Thread</button>
-                            </div>    
-                        </form>                                                
+                            </div>
+                        </form>
                     </div>
 
                 </div>
@@ -284,7 +289,7 @@
         function ask_question(event) {
             event.preventDefault();
 
-            alert("Success post your question!");
+            alert("Success post your thread!");
             location.replace("http://127.0.0.1:5500/");
         }
     </script>
