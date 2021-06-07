@@ -418,12 +418,6 @@ hr {
     border-top: 1px solid #ddd;
 }
 
-#content5 {
-    display: none;
-    padding: 20px 0 0;
-    border-top: 1px solid #ddd;
-}
-
 #main>input {
     display: none;
 }
@@ -479,8 +473,7 @@ hr {
 
 #tab1:checked ~ #content1,
 #tab2:checked ~ #content2,
-#tab3:checked ~ #content3,
-#tab5:checked ~ #content5 {
+#tab3:checked ~ #content3 {
     display: block;
 }
 
@@ -525,7 +518,22 @@ hr {
     font-size: large;
 }
 
+.right-description893{
+    cursor: pointer;
+}
+
+.thread-categ {
+    display: inline-block;
+    background-color: #403334;
+    padding: 5px 10px;
+    font-weight: normal;
+    font-size: x-small;
+    border-radius: 10px;
+    color: #ddd;
+}
+
 #que-hedder2983 h3 {
+    margin-top: 5px;
     text-decoration: none;
     color: #222629;
 }
