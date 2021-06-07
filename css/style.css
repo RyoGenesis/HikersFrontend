@@ -283,12 +283,18 @@ hr {
     font-weight: bold;
     color: black;
 
+    text-decoration: underline;
+    text-decoration-color: rgb(230, 185, 185);
+    text-decoration-thickness: 4px;
 }
 
 .welcome-demop102 p {
+    display: inline-block;
     font-size: 15px;
     color: black;
     margin-top: 30px;
+
+    border-bottom: 4px solid rgb(230, 185, 185);
 }
 
 .button0239-item {
@@ -541,6 +547,7 @@ hr {
 
 .ques-details10018 {
     margin-top: 10px;
+    text-align: justify;
     overflow: hidden;
     -o-text-overflow: ellipsis;
        text-overflow: ellipsis;
