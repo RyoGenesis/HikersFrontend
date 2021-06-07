@@ -264,8 +264,15 @@ hr {
     font-family: serif;
 }
 
+/* welcome part one*/
+
 .welcome-part-one {
-    background-color: #FF7361;
+    /*background-color: #FF7361;*/
+    /*credit background: https://www.deviantart.com/ggiuliafilippini/art/Flat-Mountains-Landscape-543137208*/
+    background-image: url(/image/mountain-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 160%;
+    
     padding-top: 15px;
     margin-top: -20px;
     padding-bottom: 35px;
@@ -274,14 +281,13 @@ hr {
 .welcome-demop102 h2 {
     font-size: 25px;
     font-weight: bold;
-    color: #fff;
-    font-family: "FontAwesome";
+    color: black;
+
 }
 
 .welcome-demop102 p {
     font-size: 15px;
-    color: #fff;
-    font-family: "FontAwesome";
+    color: black;
     margin-top: 30px;
 }
 
@@ -958,8 +964,13 @@ h5:hover {
 
 .header-descriptin329 {
     padding: 2px;
-    background-color: #FF7361;
+    background: linear-gradient(to bottom,#FF7361,#fa9082);
     margin-top: -20px;
+}
+
+.header-descriptin329 h3{
+    font-weight: bold;
+    color: rgb(25, 24, 24);
 }
 
 .breadcrumb839 {
@@ -1053,7 +1064,7 @@ h5:hover {
 }
 
 .list-category53 {
-    width: 100%;
+    width: 25%;
     height: 40px;
     background-color: #F3F3F3;
     border: none;

@@ -19,34 +19,6 @@
     <link href="css/responsive.css" rel="stylesheet" type="text/css"> </head>
 
 <body>
-    <div class="top-bar">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="navbar-menu-left-side239">
-                        <ul>
-                            <li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i>Contact</a></li>
-                            <li><a href="#"><i class="fa fa-headphones" aria-hidden="true"></i>Support</a></li>
-                            <li><a href="logIn.html"><i class="fa fa-user" aria-hidden="true"></i>Login Area</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="navbar-serch-right-side">
-                        <form class="navbar-form" role="search">
-                            <div class="input-group add-on">
-                                <input class="form-control form-control222" placeholder="Search" name="srch-term" id="srch-term" type="text">
-                                <div class="input-group-btn">
-                                    <button class="btn btn-default btn-default2913" type="submit"><i class="glyphicon glyphicon-search"></i></button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-               
-                </div>
-            </div>
-        </div>
-    </div>
     <div class="top-menu-bottom932">
         <nav class="navbar navbar-default">
             <div class="container">
@@ -60,7 +32,7 @@
                     <ul class="nav navbar-nav"> </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="ask_question.html">Ask Question</a></li>
+                        <li><a href="ask_question.html">Post Thread</a></li>
                         <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Question <span class="caret"></span></a>
                             <ul class="dropdown-menu animated zoomIn">
                                 <li><a href="category.html">Question Category</a></li>
@@ -75,7 +47,7 @@
                             <ul class="dropdown-menu animated zoomIn">
                                 <li><a href="logIn.html">Login</a></li>
                                 <li><a href="contact_us.html"> Contact Us</a></li>
-                                <li><a href="ask_question.html"> Ask Question </a></li>
+                                <li><a href="ask_question.html"> Post Thread </a></li>
                                 <li><a href="post-deatils.html"> Post-Details </a></li>
                                 <li><a href="user.html">All User</a></li>
                                 <li><a href="user_question.html"> User Question </a></li>
@@ -93,10 +65,10 @@
     </div>
     <section class="header-descriptin329">
         <div class="container">
-            <h3>Ask Question</h3>
+            <h3>Post Thread</h3>
             <ol class="breadcrumb breadcrumb839">
                 <li><a href="#">Home</a></li>
-                <li class="active">Ask Question</li>
+                <li class="active">Post Thread</li>
             </ol>
         </div>
     </section>
@@ -104,51 +76,40 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-9">
-                <div class="ask-question-input-part032">
-                      <h4>Ask Question</h4>
-                 <hr>
-                    <form>
-                    <div class="username-part940">
-                        <span class="form-description43">User name* </span><input type="text" name="fname" class="username029" placeholder="Enter your Name">  
- </div>
- <div class="email-part320">
-     <span class="form-description442">E-Mail* </span><input type="text" name="fname" class="email30" placeholder="Enter Your Email">  
-                        </div>
-                        <div class="question-title39">
-                            <span class="form-description433">Question-Title* </span><input type="text" name="fname" class="question-ttile32" placeholder="Write Your Question Title">
-                        </div>
+                    <div class="ask-question-input-part032">
+                        <h4>Post Thread</h4>
+                        <hr>
+                        <form>
+                            <div class="question-title39">
+                                <span class="form-description433">Question-Title* </span>
+                                <input type="text" name="fname" class="question-ttile32" placeholder="Write Your Question Title">
+                            </div>
+                            
+                            <div class="categori49">
+                                <span class="form-description43305">Category* </span>
+                                <select name="browser" id="category-choose" class="list-category53">
+                                    <option value="">--Select Category--</option>
+                                    <option value="Discussion">Discussion</option>
+                                    <option value="Guidance">Guidance</option>
+                                    <option value="Experiences">Experiences</option>
+                                    <option value="Question">Question</option>
+                                </select>
+                            </div>
+                            <div class="button-group-addfile3239">
+                                <span class="form-description23993">Attachment</span><input type="file" name="ffile" class="question-ttile3226">
+                                
+                            </div>
+                            <div class="details2-239">
+                                <div class="col-md-12 nopadding">
+                                    <textarea id="txtEditor"></textarea> 
+                                </div>
+                            </div>	
                         
-    <div class="categori49">
-        <span class="form-description43305">Category* </span>
-        <label>
-<input list="browsers" name="myBrowser" class="list-category53"/></label>
-<datalist id="browsers">
-  <option value="Front_End Web Developer">
-  <option value="Back-End develoer">
-  <option value="Andriod Developer">
-  <option value="Web Application">
-  <option value="System Analyst">
-  <option value="Security">
-</datalist>
-    </div>
-    <div class="button-group-addfile3239">
-        <span class="form-description23993">Attactment*</span><input type="file" name="ffile" class="question-ttile3226">
-        
-    </div>
-       <div class="details2-239">
-        <div class="col-md-12 nopadding">
-            <textarea id="txtEditor"></textarea> 
-        </div>
-                        </div>	
-                     
-</form>
-                 <div class="publish-button2389">
-                    <button type="button" class="publis1291">Publish your Question</button>
-                </div>
-               
-                </div>
-             
-              
+                        </form>
+                        <div class="publish-button2389">
+                            <button type="button" class="publis1291">Publish Thread</button>
+                        </div>                
+                    </div>              
                 </div>
 <!--                end of col-md-9 -->
            
@@ -157,10 +118,10 @@
                     <div class="categori-part329">
                         <h4>Category</h4>
                         <ul>
-                            <li><a href="#">web developer</a></li>
-                            <li><a href="#">Andriod developer</a></li>
-                            <li><a href="#">grapics developer</a></li>
-                            <li><a href="#">web developer</a></li>
+                            <li><a href="#">Discussion</a></li>
+                            <li><a href="#">Guidance</a></li>
+                            <li><a href="#">Experiences</a></li>
+                            <li><a href="#">Question</a></li>
                         </ul>
                     </div>
                     
