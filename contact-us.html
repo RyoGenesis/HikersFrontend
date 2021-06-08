@@ -53,6 +53,15 @@
                             </ul>
                         </li>
                         <li><a href="contact-us.html"> Contact Us</a></li>
+                        <li> <a href="#" class="profile-icon" data-toggle="dropdown" role="button" aria-haspopup="true"
+                                aria-expanded="false">
+                                <img src="image/images.png" alt="image">
+                                <span class="caret"></span></a>
+                            <ul class="dropdown-menu animated zoomIn">
+                                <li><a href="user-details.html"> Profile </a></li>
+                                <li><a href="logIn.html"> Log Out </a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
@@ -66,7 +75,7 @@
         <div class="container">
             <h3>Ask Question</h3>
             <ol class="breadcrumb breadcrumb839">
-                <li><a href="#">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li class="active">Contact US</li>
             </ol>
         </div>
@@ -80,11 +89,11 @@
     <section class="main-content920">
         <div class="container">
             <div class="row">
-                <div class="col-md-9">
+                <div class="col-md-12">
                     <div class="ask-question-input-part032">
                         <h4>Contact Us</h4>
                         <hr>
-                        <form>
+                        <form action="index.html" method="POST" onsubmit="return ask_question(event)">
                             <div class="username-part940">
                                 <span class="form-description43">User name* </span><input type="text" name="fname"
                                     class="username029" placeholder="Enter your Name">
@@ -101,83 +110,15 @@
                                 <span class="form-description43313">Details* </span>
                                 <textarea class="question-details3112"
                                     placeholder="Type the description thoroughly and in detail .">
-
-
-                        </textarea>
-
-
+                                </textarea>
                             </div>
-
-
+                            <div class="publish-button2389">
+                                <button type="submit" class="publis1291">Send Question</button>
+                            </div>
                         </form>
-                        <div class="publish-button2389">
-                            <button type="button" class="publis1291">Publish your Question</button>
-                        </div>
-
                     </div>
-
-
                 </div>
                 <!--                end of col-md-9 -->
-
-                <!--start col-md-3 (side bar)-->
-                <aside class="col-md-3 sidebar97239">
-                    <div class="categori-part329">
-                        <h4>Category</h4>
-                        <ul>
-                            <li><a href="#">Discussion</a></li>
-                            <li><a href="#">Guidance</a></li>
-                            <li><a href="#">Experiences</a></li>
-                            <li><a href="#">Question</a></li>
-                        </ul>
-                    </div>
-
-                    <!--          start tags part-->
-                    <div class="tags-part2398">
-                        <h4>Tags</h4>
-                        <ul>
-                            <li><a href="#">hiking</a></li>
-                            <li><a href="#">adventure</a></li>
-                            <li><a href="#">mountains</a></li>
-                            <li><a href="#">travel</a></li>
-                            <li><a href="#">trekking</a></li>
-                            <li><a href="#">explore</a></li>
-                            <li><a href="#">camping</a></li>
-                            <li><a href="#">outdoors</a></li>
-                            <li><a href="#">hike</a></li>
-                        </ul>
-                    </div>
-                    <!--          End tags part-->
-                    <!--        start recent post  -->
-                    <div class="recent-post3290">
-                        <h4>Recent Post</h4>
-                        <div class="post-details021"> <a href="#">
-                                <h5>Rock Lakes - Serene Lake Hike 6/1-6/2 2021</h5>
-                            </a>
-                            <p>I heard the Roaring River Wilderness had recently been opened up by the Forest Service
-                                after the fires last summer. With a few open days on our schedule, my wife and I decided
-                                to go check it out...</p> <small style="color: #848991">July 16, 2017</small>
-                        </div>
-                        <hr>
-                        <div class="post-details021"> <a href="#">
-                                <h5>Trinity Alps 5/27/2021</h5>
-                            </a>
-                            <p>Perfect time to go there. The snow is pretty much all melted off any trail you'd want to
-                                walk on. It got up to 85F or so - pretty warm...</p> <small style="color: #848991">July
-                                16, 2017</small>
-                        </div>
-                        <hr>
-                        <div class="post-details021"> <a href="#">
-                                <h5>Trout Creek to View Point – 2021-06-03</h5>
-                            </a>
-                            <p>This is an out and back hike on the PCT Southbound. The hike on the way in is a moderate
-                                elevation gain.
-                                Not a lot of flowers or other views on the trail...</p> <small
-                                style="color: #848991">July 16, 2017</small>
-                        </div>
-                    </div>
-                    <!--       end recent post    -->
-                </aside>
             </div>
         </div>
     </section>
@@ -203,10 +144,11 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="info-part-one320">
-                        <h4>Where is Hikers ?</h4>
-                        <p>Hikers is an application that resembles a portal for mountaineers to provide information to
+                        <h4>What is Hikers ?</h4>
+                        <p>Hikers is an web application that resembles a portal for mountaineers to provide
+                            information to
                             each other about things related to hiking. In addition to the community portal, the app
-                            offers a hiking route planner and a GPS-based Find me feature if you get lost or need help.
+                            offers a hiking route planner.
                         </p>
                         <h4>Address :</h4>
                         <p>Jakarta, Indonesia.</p>
@@ -268,6 +210,14 @@
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/npm.js"></script>
+    <script>
+        function ask_question(event) {
+            event.preventDefault();
+
+            alert("Sending Question success!");
+            location.replace("http://127.0.0.1:5500/");
+        }
+    </script>
 </body>
 
 </html>
