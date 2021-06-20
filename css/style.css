@@ -286,7 +286,7 @@ hr {
 .welcome-part-one {
     /*background-color: #FF7361;*/
     /*credit background: https://www.deviantart.com/ggiuliafilippini/art/Flat-Mountains-Landscape-543137208*/
-    background-image: url(/image/mountain-bg.jpg);
+    background-image: url(../image/mountain-bg.jpg);
     background-repeat: no-repeat;
     background-size: 100% 160%;
     
@@ -450,7 +450,6 @@ hr {
 }
 
 #main>label:before {
-    font-family: fontawesome;
     font-weight: normal;
     margin-right: 10px;
 }
@@ -606,7 +605,6 @@ hr {
     background-color: #222629;
 }
 
-
 .ques-details10018 p {
     margin-top: 10px;
 }
@@ -614,7 +612,6 @@ hr {
 .ques-icon-info3293 {
     font-size: 13px;
     font-weight: bold;
-    
 }
 
 .ques-icon-info3293 i {
@@ -783,7 +780,6 @@ hr {
     background-color: #222629;
     padding: 5px 15px;
     border-radius: 15px;
-    font-family: fontawesome;
     text-decoration: none;
     color: #dddddd;
 }
@@ -792,7 +788,6 @@ hr {
     background-color: #fd7362;
     padding: 5px 15px;
     border-radius: 15px;
-    font-family: fontawesome;
     text-decoration: none;
     color: #dddddd;
     -webkit-transition: .5s;
@@ -833,7 +828,6 @@ h5:hover {
 }
 
 .post-details021 p {
-    font-family: fontawesome;
     color: #848991;
 }
 
@@ -917,7 +911,6 @@ h5:hover {
 
 .info-part-one320 {
     color: #ddd;
-    font-family: fontawesome;
 }
 
 .info-part-one320 h4 {
@@ -926,19 +919,16 @@ h5:hover {
 
 .info-part-two320 h4 {
     color: #fd6372;
-    font-family: fontawesome;
 }
 
 .info-part-two320 a {
     text-decoration: none;
     color: #ddd;
-    font-family: fontawesome;
 }
 
 .info-part-two320 a:hover {
     text-decoration: none;
     color: #fd6372;
-    font-family: fontawesome;
 }
 
 .info-part-two320 p {
@@ -966,7 +956,6 @@ h5:hover {
 
 .footer-social p {
     color: #ddd;
-    font-family: fontawesome;
 }
 
 .social-right2389 {
@@ -1039,7 +1028,6 @@ h5:hover {
 .form-description43 {
     margin-right: 108px;
     color: #fd7362;
-    font-family: fontawesome;
     font-weight: bold;
 }
 
@@ -1061,7 +1049,6 @@ h5:hover {
 .form-description442 {
     margin-right: 130px;
     color: #fd7362;
-    font-family: fontawesome;
     font-weight: bold;
 }
 
@@ -1083,7 +1070,6 @@ h5:hover {
 .form-description433 {
     margin-right: 90px;
     color: #fd7362;
-    font-family: fontawesome;
     font-weight: bold;
 }
 
@@ -1105,7 +1091,6 @@ h5:hover {
 .form-description4342 {
     margin-right: 90px;
     color: #fd7362;
-    font-family: fontawesome;
     font-weight: bold;
 }
 
@@ -1116,7 +1101,6 @@ h5:hover {
 .form-description43305 {
     margin-right: 117px;
     color: #fd7362;
-    font-family: fontawesome;
     font-weight: bold;
 }
 
@@ -1127,7 +1111,6 @@ h5:hover {
 .form-description23993 {
     margin-right: 106px;
     color: #fd7362;
-    font-family: fontawesome;
     font-weight: bold;
     float: left;
 }
@@ -1159,7 +1142,6 @@ h5:hover {
 .form-description43313 {
     margin-right: 131px;
     color: #fd7362;
-    font-family: fontawesome;
     font-weight: bold;
     float: left;
 }
@@ -1282,7 +1264,6 @@ h5:hover {
     padding: 15px;
     margin-top: 20px;
     font-size: 12px;
-    font-family: fontawesome;
     -webkit-box-shadow: 0px 0px 13px -3px;
             box-shadow: 0px 0px 13px -3px;
 }
@@ -1715,7 +1696,6 @@ h5:hover {
     font-size: 10px;
     padding: 3px 10px 3px 10px;
     background-color: #DD9933;
-    font-family: fontawesome;
     border-radius: 2px;
     display: inline-block;
 }
@@ -1733,7 +1713,6 @@ h5:hover {
 }
 
 .user-list10039 ul li {
-    font-family: fontawesome;
     list-style: none;
 }
 
@@ -1753,7 +1732,6 @@ h5:hover {
 .user-description303 p {
     margin-bottom: 30px;
     color: #848991;
-    font-family: fontawesome;
 }
 
 .user-description303 a {
@@ -1763,7 +1741,6 @@ h5:hover {
     border-radius: 3px;
     color: #fff;
     font-weight: bold;
-    font-family: fontawesome;
 }
 
 .user-social3903 {
@@ -1846,8 +1823,6 @@ h5:hover {
 .ul_list_ul_list-icon-ok281 ul li a {
     text-decoration: none;
     color: #222629;
-    font-family: fonawesome;
-    
 }
 
 
@@ -1865,12 +1840,7 @@ h5:hover {
   
 }
 
-.user-description3903 p {
-    font-family: fontawesome;
-}
-
 .user-description3903 a {
-    font-family: fontawesome;
     text-decoration: none;
     color: #FF7361;
 }
@@ -1881,4 +1851,40 @@ h5:hover {
 
 .category2781 {
     margin-top: 70px;
+}
+
+/*-======View Map=======*/
+
+.map-detail{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.map-buttons{
+    margin-top: 10px;
+}
+
+.fa-star{
+    color: rgb(220, 231, 20);
+}
+
+.map-route-items{
+    background-color: #fff;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    -webkit-box-shadow: 0px 0px 13px -3px #777;
+            box-shadow: 0px 0px 13px -3px #777;
+}
+
+.map-route-title h3{
+    margin-top: 5px;
+    text-decoration: none;
+    color: #222629;
+}
+
+.map-route-title a{
+    text-decoration: none;
+    color: #222629;
+    font-weight: bold;
 }
