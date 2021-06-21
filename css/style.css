@@ -32,13 +32,11 @@ hr {
 .navbar-menu-left-side239 ul li a {
     text-decoration: none;
     color: #fff;
-    font-family: "FontAwesome";
 }
 
 .navbar-menu-left-side239 ul li a:hover {
     text-decoration: none;
     color: #000;
-    font-family: "FontAwesome";
     -webkit-transition: .6s;
     -o-transition: .6s;
     transition: .6s;
@@ -716,7 +714,6 @@ hr {
 .categori-part329 h4 {
     color: #FF7361;
     font-weight: bold;
-    font-family: serif;
     border-bottom: 2px solid #eaeaeb;
     padding-bottom: 10px;
 }
@@ -764,7 +761,6 @@ hr {
 .tags-part2398 h4 {
     color: #FF7361;
     font-weight: bold;
-    font-family: serif;
     border-bottom: 2px solid #eaeaeb;
     padding-bottom: 10px;
 }
@@ -809,7 +805,6 @@ hr {
 .recent-post3290 h4 {
     color: #FF7361;
     font-weight: bold;
-    font-family: serif;
     border-bottom: 2px solid #eaeaeb;
     padding-bottom: 10px;
 }
@@ -1687,6 +1682,7 @@ h5:hover {
     padding: 20px;
     background-color: #fff;
     margin-bottom: 30px;
+    border-radius: 10px;
 }
 
 .badge229 a {
@@ -1732,15 +1728,6 @@ h5:hover {
 .user-description303 p {
     margin-bottom: 30px;
     color: #848991;
-}
-
-.user-description303 a {
-    padding: 8px 20px 8px 20px;
-    text-decoration: none;
-    background-color: #FF7361;
-    border-radius: 3px;
-    color: #fff;
-    font-weight: bold;
 }
 
 .user-social3903 {
@@ -1805,19 +1792,27 @@ h5:hover {
     margin-top: 30px;
 }
 
+.achievement-showcase{
+    background-color: #fff;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
 .ul_list_ul_list-icon-ok281 {
-    padding: 15px;
+    padding: 10px;
     display: inline-block;
+    margin-left: 20px;
 }
 .ul_list_ul_list-icon-ok281 ul {
-       
        width: 100%;
 }
+
 .ul_list_ul_list-icon-ok281 ul li {
     list-style: none;
     padding: 12px;
     margin-top: 10px;
     background-color: #EAEAEB;
+    border-radius: 5px;
 }
 
 .ul_list_ul_list-icon-ok281 ul li a {
@@ -1887,4 +1882,8 @@ h5:hover {
     text-decoration: none;
     color: #222629;
     font-weight: bold;
+}
+
+.route-btn{
+    margin-bottom: 10px;
 }

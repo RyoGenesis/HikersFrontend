@@ -30,7 +30,7 @@
         <div id="response">
           <p></p>
         </div>
-        <form action="" method="POST" onsubmit="signup(event)">
+        <form action="" method="GET" onsubmit="signup(event)">
           <input type="text" id="Username" placeholder="Username*" />
           <input type="email" id="Email" placeholder="E-Mail*" />
           <input type="password" id="Password" placeholder="Password*" />
@@ -99,7 +99,7 @@
 
 
       alert("Success register user!");
-      location.replace("http://127.0.0.1:5500/login.html");
+      window.location.replace("logIn.html");
 
     }
   </script>

@@ -95,6 +95,20 @@
             </div>
             <div class="row">
                 <div class="col-md-12">
+                    <div class="map-description">
+                        <p>Description: Convenient route for hiking around the Adirondack Mountain Range, great for newcomer and a relaxing time for veterans. Around 2-3 hours depending on the situation</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <button type="button" class="btn btn-primary" style="margin-bottom: 20px;">
+                        Use This Route
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
                     <div id="map">
                         <iframe width="1128" height="500" frameborder="0" style="border:0"
                             src="https://www.google.com/maps/embed/v1/directions?origin=40.7127837,-74.0059413&destination=42.3600825,-71.05888&key=AIzaSyAIyA9kxkGU_881z7dYKwQiuahmPckvlfQ"
@@ -105,15 +119,15 @@
             </div>
             <div class="row">
                 <div class="col-md-5 map-buttons">
-                    <a href="#" class="btn btn-success">
+                    <a class="btn btn-success" href="https://www.google.com/maps" target="_blank">
                         Edit Route
-                    </a>
-                    <a href="#" class="btn btn-success">
+                    <a>
+                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#rename-route">
                         Rename Route
-                    </a>
-                    <a href="#" class="btn btn-danger">
+                    </button>
+                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#delete-route">
                         Delete Route
-                    </a>
+                    </button>
                 </div>
             </div>
         </div>
@@ -182,6 +196,62 @@
         </div>
 
     </section>
+
+    <section id="modals">
+        <div class="modal fade" id="rename-route" tabindex="-1" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h5 class="modal-title">Rename Route</h5>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <form id="formRenameRoute" role="form">
+                                <div class="form-group row">
+                                    <label class="col-sm-9 col-form-label" for="Name">Route Name</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control mt-2" id="Name" name="Name" placeholder="Enter Route Name" value="Adirondack Mountain Range Route" required>
+                                    </div>
+                                </div>
+                                <div class="form-group row mt-2">
+                                    <label class="col-sm-9 col-form-label" for="Description">Description/Notes</label>
+                                    <div class="col-sm-9">
+                                        <textarea class="form-control mt-2" id="Description" name="Description" placeholder="Route Description" rows="5" required>
+                                            Convenient route for hiking around the Adirondack Mountain Range, great for newcomer and a relaxing time for veterans. Around 2-3 hours depending on the situation
+                                        </textarea>
+                                    </div>
+                                </div>
+                                <div class="text-left mt-4">
+                                    <button type="submit" class="btn btn-primary pe-3 ps-3">Save and Close</button>
+                                    <button type="button" class="btn btn-secondary ps-5 pe-5 closeModal" data-dismiss="modal">Cancel</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="delete-route" tabindex="-1" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
+            <div class="modal-dialog modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h5 class="modal-title">Delete Route</h5>
+                    </div>
+                    <div class="modal-body">
+                            <h3 style="padding-bottom: 10px; text-align: center;">Are You Sure ?</h3>
+                            <div class="text-left mt-4">
+                                <a href="your-routes.html" class="btn btn-primary pe-3 ps-3">Yes and Delete Route</a>
+                                <button type="button" class="btn btn-secondary ps-5 pe-5 closeModal" data-dismiss="modal">Cancel</button>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="footer-social">
         <div class="container">
             <div class="row">

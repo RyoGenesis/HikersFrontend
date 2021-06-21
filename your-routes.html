@@ -88,6 +88,11 @@
                     <section class="category2781">
                         <h1 style="font-weight: bolder;">Your Saved Routes</h1>
                         <hr>
+
+                        <button type="button" class="route-btn btn btn-primary" data-toggle="modal" data-target="#add-new-route">
+                            Add New Route
+                        </button>
+
                         <div class="map-route-items">
                             <div class="row">
                                 <div class="col-md-10">
@@ -204,6 +209,48 @@
             </div>
         </div>
     </section>
+
+    <section id="modals">
+        <div class="modal fade" id="add-new-route" tabindex="-1" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h5 class="modal-title">Add New Route</h5>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <form id="formAddNewRoute" role="form">
+                                <div class="form-group row">
+                                    <label class="col-sm-9 col-form-label" for="Name">Route Name</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control mt-2" id="Name" name="Name" placeholder="Enter Route Name" required>
+                                    </div>
+                                </div>
+                                <div class="form-group row mt-2">
+                                    <label class="col-sm-9 col-form-label" for="Description">Description/Notes</label>
+                                    <div class="col-sm-9">
+                                        <textarea class="form-control mt-2" id="Descriptioni" name="Description" placeholder="Route Description" rows="5" required></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group row mt-2">
+                                    <label class="col-sm-9 col-form-label" for="Link">Google Map Embed Link</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control mt-2" id="Link" name="Link" placeholder="Google Map Link" required>
+                                    </div>
+                                </div>
+                                <div class="text-left mt-4">
+                                    <button type="submit" class="btn btn-primary pe-3 ps-3">Save and Close</button>
+                                    <button type="button" class="btn btn-secondary ps-5 pe-5 closeModal" data-dismiss="modal">Cancel</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!--    footer -->
     <div class="footer-search">
         <div class="container">
